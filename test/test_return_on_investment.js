@@ -4,7 +4,7 @@ var returnOnInvestment = require("../lib/return_on_investment.js");
 describe("returnOnInvestment", function() {
   it("should return the total number of bottles that can be redeemed with the initial investment", function() {
     var investments = [20, 40];//, 10, 5, 7];
-    var answers = [25, 55];
+    var answers = [35, 75];
     for(var i = 0; i < investments.length; i++){
       var x = returnOnInvestment(investments[i]);
       assert.isTrue(x === answers[i]);
